@@ -45,6 +45,9 @@ namespace :laravel do
     task :artisan do
         on roles(:laravel) do
             within release_path do
+                execute :php, "artisan config:clear"
+                execute :php, "artisan cache:clear"
+                execute :php, "artisan view:clear"
                 execute :php, "artisan storage:link"
             end
         end
@@ -67,4 +70,5 @@ namespace :deploy do
     after :updated, "laravel:configure_dot_env"
     after :updated, "composer:install"
     after :updated, "laravel:fix_permission"
+    after :updated, "laravel:artisan"
 end
