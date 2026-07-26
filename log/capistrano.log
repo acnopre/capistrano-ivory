@@ -52050,3 +52050,1049 @@ remote: Total 13 (delta 10), reused 13 (delta 10), pack-reused 0 (from 0)[K
   INFO [b1570e1b] Running /usr/bin/env echo "Branch main (at 8f206a853908f05a2af7dfa8ad3565758bec3706) deployed as release 20260212165046 by ayenopre" >> /var/www/html/ivory/revisions.log as allen@129.212.236.65
  DEBUG [b1570e1b] Command: cd /var/www/html/ivory/releases && /usr/bin/env echo "Branch main (at 8f206a853908f05a2af7dfa8ad3565758bec3706) deployed as release 20260212165046 by ayenopre" >> /var/www/html/ivory/revisions.log
   INFO [b1570e1b] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 15:49:03 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e8e0c0af] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [e8e0c0af] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 16:36:46 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [24638447] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [24638447] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 16:37:23 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [26aa4a4a] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [26aa4a4a] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:40:28 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [546e5b82] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [546e5b82] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:50:00 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9e996fe6] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [9e996fe6] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:50:34 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [15e3581c] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [15e3581c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:51:47 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b7d369d7] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [b7d369d7] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:52:24 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [74c82d7b] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [74c82d7b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [74c82d7b] Finished in 2.012 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-620a16b452ed04b33bdd.sh 0.0%
+  INFO Uploading /tmp/git-ssh-620a16b452ed04b33bdd.sh 100.0%
+  INFO [daec83d1] Running /usr/bin/env chmod 700 /tmp/git-ssh-620a16b452ed04b33bdd.sh as allen@129.212.236.65
+ DEBUG [daec83d1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-620a16b452ed04b33bdd.sh
+  INFO [daec83d1] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [c06b7b08] Running /usr/bin/env git ls-remote git@github.com:acnopre/hpdai.git HEAD as allen@129.212.236.65
+ DEBUG [c06b7b08] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git ls-remote git@github.com:acnopre/hpdai.git HEAD )
+ DEBUG [c06b7b08] 	2c1adafff83178c39b9230ad68906ff2c5877775	HEAD
+  INFO [c06b7b08] Finished in 2.937 seconds with exit status 0 (successful).
+  INFO [4303a090] Running /usr/bin/env mkdir -p /var/www/html/ivory/shared /var/www/html/ivory/releases as allen@129.212.236.65
+ DEBUG [4303a090] Command: /usr/bin/env mkdir -p /var/www/html/ivory/shared /var/www/html/ivory/releases
+  INFO [4303a090] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [a919b964] Running /usr/bin/env mkdir -p /var/www/html/ivory/shared/storage/app /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/shared/storage/uploads as allen@129.212.236.65
+ DEBUG [a919b964] Command: /usr/bin/env mkdir -p /var/www/html/ivory/shared/storage/app /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/shared/storage/uploads
+  INFO [a919b964] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [cf24e3ea] Running [ -f /var/www/html/ivory/current/REVISION ] as allen@129.212.236.65
+ DEBUG [cf24e3ea] Command: [ -f /var/www/html/ivory/current/REVISION ]
+ DEBUG [cf24e3ea] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [0e78ff24] Running /usr/bin/env cat /var/www/html/ivory/current/REVISION 2>/dev/null as allen@129.212.236.65
+ DEBUG [0e78ff24] Command: /usr/bin/env cat /var/www/html/ivory/current/REVISION 2>/dev/null
+ DEBUG [0e78ff24] 	1cafc33e8e06ccc18820b4042a942d90897835c9
+ DEBUG [0e78ff24] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [14e9db0f] Running [ -f /var/www/html/ivory/current/REVISION_TIME ] as allen@129.212.236.65
+ DEBUG [14e9db0f] Command: [ -f /var/www/html/ivory/current/REVISION_TIME ]
+ DEBUG [14e9db0f] Finished in 0.171 seconds with exit status 1 (failed).
+ DEBUG [00276d11] Running [ -f /var/www/html/ivory/repo/HEAD ] as allen@129.212.236.65
+ DEBUG [00276d11] Command: [ -f /var/www/html/ivory/repo/HEAD ]
+ DEBUG [00276d11] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/ivory/repo
+ DEBUG [2f7fafad] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [2f7fafad] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [2f7fafad] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [ad95cf35] Running /usr/bin/env git remote set-url origin git@github.com:acnopre/hpdai.git as allen@129.212.236.65
+ DEBUG [ad95cf35] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git remote set-url origin git@github.com:acnopre/hpdai.git )
+  INFO [ad95cf35] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [130795b0] Running /usr/bin/env git remote update --prune as allen@129.212.236.65
+ DEBUG [130795b0] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [130795b0] 	remote: Enumerating objects: 17, done.[K
+remote: Counting objects:   5% (1/17)[Kremote: Counting objects:  11% (2/17)[Kremote: Counting objects:  17% (3/17)[Kremote: Counting objects:  23% (4/17)[Kremote: Counting objects:  29% (5/17)[Kremote: Counting objects:  35% (6/17)[Kremote: Counting objects:  41% (7/17)[Kremote: Counting objects:  47% (8/17)[Kremote: Counting objects:  52% (9/17)[Kremote: Counting objects:  58% (10/17)[Kremote: Counting objects:  64% (11/17)[Kremote: Counting objects:  70% (12/17)[Kremote: Counting objects:  76% (13/17)[Kremote: Counting objects:  82% (14/17)[Kremote: Counting objects:  88% (15/17)[Kremote: Counting objects:  94% (16/17)[Kremote: Counting objects: 100% (17/17)[Kremote: Counting objects: 100% (17/17), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 9 (delta 7), reused 9 (delta 7), pack-reused 0 (from 0)[K
+ DEBUG [130795b0] 	Unpacking objects:  11% (1/9)
+ DEBUG [130795b0] 	Unpacking objects:  22% (2/9)
+ DEBUG [130795b0] 	Unpacking objects:  33% (3/9)
+ DEBUG [130795b0] 	Unpacking objects:  44% (4/9)
+ DEBUG [130795b0] 	Unpacking objects:  55% (5/9)
+ DEBUG [130795b0] 	Unpacking objects:  66% (6/9)
+ DEBUG [130795b0] 	Unpacking objects:  77% (7/9)
+ DEBUG [130795b0] 	Unpacking objects:  88% (8/9)
+ DEBUG [130795b0] 	Unpacking objects: 100% (9/9)Unpacking objects: 100% (9/9), 768 bytes | 64.00 KiB/s, done.
+ DEBUG [130795b0] 	
+ DEBUG [130795b0] 	From github.com:acnopre/hpdai
+   1cafc33e..2c1adaff  main       -> main
+  INFO [130795b0] Finished in 3.269 seconds with exit status 0 (successful).
+ DEBUG [036d07ca] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [036d07ca] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [036d07ca] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [cabed28f] Running /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135230 as allen@129.212.236.65
+ DEBUG [cabed28f] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135230 )
+  INFO [cabed28f] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [db66e6c1] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/html/ivory/releases/20260726135230 as allen@129.212.236.65
+ DEBUG [db66e6c1] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/html/ivory/releases/20260726135230 )
+  INFO [db66e6c1] Finished in 0.864 seconds with exit status 0 (successful).
+ DEBUG [fc7d2649] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [fc7d2649] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [fc7d2649] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [f80742e3] Running /usr/bin/env git rev-list --max-count=1 main as allen@129.212.236.65
+ DEBUG [f80742e3] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [f80742e3] 	2c1adafff83178c39b9230ad68906ff2c5877775
+ DEBUG [f80742e3] Finished in 0.169 seconds with exit status 0 (successful).
+ DEBUG [139eaf54] Running if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [139eaf54] Command: if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi
+ DEBUG [139eaf54] Finished in 0.163 seconds with exit status 0 (successful).
+  INFO [301d20be] Running /usr/bin/env echo "2c1adafff83178c39b9230ad68906ff2c5877775" > REVISION as allen@129.212.236.65
+ DEBUG [301d20be] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env echo "2c1adafff83178c39b9230ad68906ff2c5877775" > REVISION
+  INFO [301d20be] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [0de266c8] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [0de266c8] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [0de266c8] Finished in 0.148 seconds with exit status 0 (successful).
+ DEBUG [513fa0e3] Running /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main as allen@129.212.236.65
+ DEBUG [513fa0e3] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-620a16b452ed04b33bdd.sh" ; /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main )
+ DEBUG [513fa0e3] 	1785073202
+ DEBUG [513fa0e3] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [c522fef6] Running if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [c522fef6] Command: if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi
+ DEBUG [c522fef6] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [9c55be6c] Running /usr/bin/env echo "1785073202" > REVISION_TIME as allen@129.212.236.65
+ DEBUG [9c55be6c] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env echo "1785073202" > REVISION_TIME
+  INFO [9c55be6c] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [ecf6340a] Running /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135230/storage /var/www/html/ivory/releases/20260726135230/storage/framework as allen@129.212.236.65
+ DEBUG [ecf6340a] Command: /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135230/storage /var/www/html/ivory/releases/20260726135230/storage/framework
+  INFO [ecf6340a] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [15802388] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/app ] as allen@129.212.236.65
+ DEBUG [15802388] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/app ]
+ DEBUG [15802388] Finished in 0.157 seconds with exit status 1 (failed).
+ DEBUG [ba5dede6] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/app ] as allen@129.212.236.65
+ DEBUG [ba5dede6] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/app ]
+ DEBUG [ba5dede6] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [96daa845] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/app as allen@129.212.236.65
+ DEBUG [96daa845] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/app
+  INFO [96daa845] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [7e1e4c31] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/app /var/www/html/ivory/releases/20260726135230/storage/app as allen@129.212.236.65
+ DEBUG [7e1e4c31] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/app /var/www/html/ivory/releases/20260726135230/storage/app
+  INFO [7e1e4c31] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [695e4065] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/cache ] as allen@129.212.236.65
+ DEBUG [695e4065] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/cache ]
+ DEBUG [695e4065] Finished in 0.147 seconds with exit status 1 (failed).
+ DEBUG [2af93f5e] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/cache ] as allen@129.212.236.65
+ DEBUG [2af93f5e] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/cache ]
+ DEBUG [2af93f5e] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [8a8d8d79] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/cache as allen@129.212.236.65
+ DEBUG [8a8d8d79] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/cache
+  INFO [8a8d8d79] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [7fee6ae1] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/releases/20260726135230/storage/framework/cache as allen@129.212.236.65
+ DEBUG [7fee6ae1] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/releases/20260726135230/storage/framework/cache
+  INFO [7fee6ae1] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [f1215736] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/sessions ] as allen@129.212.236.65
+ DEBUG [f1215736] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/sessions ]
+ DEBUG [f1215736] Finished in 0.150 seconds with exit status 1 (failed).
+ DEBUG [608e60dd] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/sessions ] as allen@129.212.236.65
+ DEBUG [608e60dd] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/sessions ]
+ DEBUG [608e60dd] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [e575c4bb] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/sessions as allen@129.212.236.65
+ DEBUG [e575c4bb] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/sessions
+  INFO [e575c4bb] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [ced6ca16] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/releases/20260726135230/storage/framework/sessions as allen@129.212.236.65
+ DEBUG [ced6ca16] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/releases/20260726135230/storage/framework/sessions
+  INFO [ced6ca16] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [b41de567] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/views ] as allen@129.212.236.65
+ DEBUG [b41de567] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/framework/views ]
+ DEBUG [b41de567] Finished in 0.146 seconds with exit status 1 (failed).
+ DEBUG [8a7311b1] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/views ] as allen@129.212.236.65
+ DEBUG [8a7311b1] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/framework/views ]
+ DEBUG [8a7311b1] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [eb23a524] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/views as allen@129.212.236.65
+ DEBUG [eb23a524] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/framework/views
+  INFO [eb23a524] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [8fb9a1dc] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/releases/20260726135230/storage/framework/views as allen@129.212.236.65
+ DEBUG [8fb9a1dc] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/releases/20260726135230/storage/framework/views
+  INFO [8fb9a1dc] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [05a1c763] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/logs ] as allen@129.212.236.65
+ DEBUG [05a1c763] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/logs ]
+ DEBUG [05a1c763] Finished in 0.150 seconds with exit status 1 (failed).
+ DEBUG [d1dfb85f] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/logs ] as allen@129.212.236.65
+ DEBUG [d1dfb85f] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/logs ]
+ DEBUG [d1dfb85f] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [0cf81c6f] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/logs as allen@129.212.236.65
+ DEBUG [0cf81c6f] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/storage/logs
+  INFO [0cf81c6f] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [4eb77d74] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/releases/20260726135230/storage/logs as allen@129.212.236.65
+ DEBUG [4eb77d74] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/releases/20260726135230/storage/logs
+  INFO [4eb77d74] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [1182fdd2] Running [ -L /var/www/html/ivory/releases/20260726135230/storage/uploads ] as allen@129.212.236.65
+ DEBUG [1182fdd2] Command: [ -L /var/www/html/ivory/releases/20260726135230/storage/uploads ]
+ DEBUG [1182fdd2] Finished in 0.148 seconds with exit status 1 (failed).
+ DEBUG [9816224c] Running [ -d /var/www/html/ivory/releases/20260726135230/storage/uploads ] as allen@129.212.236.65
+ DEBUG [9816224c] Command: [ -d /var/www/html/ivory/releases/20260726135230/storage/uploads ]
+ DEBUG [9816224c] Finished in 0.148 seconds with exit status 1 (failed).
+  INFO [e9c21e1d] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/uploads /var/www/html/ivory/releases/20260726135230/storage/uploads as allen@129.212.236.65
+ DEBUG [e9c21e1d] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/uploads /var/www/html/ivory/releases/20260726135230/storage/uploads
+  INFO [e9c21e1d] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [5612fa76] Running /usr/bin/env cp /var/www/html/secret/.env /var/www/html/ivory/releases/20260726135230/.env as allen@129.212.236.65
+ DEBUG [5612fa76] Command: /usr/bin/env cp /var/www/html/secret/.env /var/www/html/ivory/releases/20260726135230/.env
+  INFO [5612fa76] Finished in 0.165 seconds with exit status 0 (successful).
+ DEBUG [266f6e25] Running if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [266f6e25] Command: if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi
+ DEBUG [266f6e25] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [59dea76d] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/vendor as allen@129.212.236.65
+ DEBUG [59dea76d] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135230/vendor
+  INFO [59dea76d] Finished in 0.149 seconds with exit status 0 (successful).
+  INFO [e3afac52] Running /usr/bin/env composer install --prefer-dist --optimize-autoloader --ignore-platform-req=php --no-scripts as allen@129.212.236.65
+ DEBUG [e3afac52] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env composer install --prefer-dist --optimize-autoloader --ignore-platform-req=php --no-scripts
+ DEBUG [e3afac52] 	[32mInstalling dependencies from lock file (including require-dev)[39m
+ DEBUG [e3afac52] 	[32mVerifying lock file contents can be installed on current platform.[39m
+ DEBUG [e3afac52] 	[32mPackage operations: 160 installs, 0 updates, 0 removals[39m
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	    0 [>---------------------------]
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	    0 [->--------------------------]
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	    0 [--->------------------------]
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	  - Installing [32mvoku/portable-ascii[39m ([33m2.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-php80[39m ([33mv1.37.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-mbstring[39m ([33mv1.38.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-ctype[39m ([33mv1.37.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpoption/phpoption[39m ([33m1.9.5[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mgraham-campbell/result-type[39m ([33mv1.1.4[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mvlucas/phpdotenv[39m ([33mv5.6.4[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/css-selector[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mtijsverkoyen/css-to-inline-styles[39m ([33mv2.4.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/deprecation-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msymfony/var-dumper[39m ([33mv7.4.14[39m): Extracting archive
+  - Installing [32msymfony/polyfill-uuid[39m ([33mv1.37.0[39m): Extracting archive
+  - Installing [32msymfony/uid[39m ([33mv7.4.9[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/routing[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/process[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-php85[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32msymfony/polyfill-php84[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32msymfony/polyfill-php83[39m ([33mv1.38.2[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-intl-normalizer[39m ([33mv1.38.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-intl-idn[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/mime[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/container[39m ([33m2.0.2[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32msymfony/service-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/event-dispatcher[39m ([33m1.0.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/event-dispatcher-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/event-dispatcher[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/log[39m ([33m3.0.2[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mdoctrine/lexer[39m ([33m3.0.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32megulias/email-validator[39m ([33m4.0.4[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/mailer[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/http-foundation[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/error-handler[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/http-kernel[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32msymfony/finder[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/polyfill-intl-grapheme[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/string[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/console[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mramsey/collection[39m ([33m2.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mbrick/math[39m ([33m0.14.8[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mramsey/uuid[39m ([33m4.9.3[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mpsr/simple-cache[39m ([33m3.0.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mnunomaduro/termwind[39m ([33mv2.4.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/translation-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/translation[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/clock[39m ([33m1.0.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32msymfony/clock[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mcarbonphp/carbon-doctrine-types[39m ([33m3.2.0[39m): Extracting archive
+  - Installing [32mnesbot/carbon[39m ([33m3.13.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mmonolog/monolog[39m ([33m3.10.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/http-message[39m ([33m2.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mpsr/http-factory[39m ([33m1.1.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/uri-interfaces[39m ([33m7.8.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/uri[39m ([33m7.8.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/mime-type-detection[39m ([33m1.17.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/flysystem-local[39m ([33m3.31.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mleague/flysystem[39m ([33m3.35.2[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mnette/utils[39m ([33mv4.1.4[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mnette/schema[39m ([33mv1.3.5[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mdflydev/dot-access-data[39m ([33mv3.0.3[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/config[39m ([33mv1.2.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mleague/commonmark[39m ([33m2.8.3[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mlaravel/serializable-closure[39m ([33mv2.0.13[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mlaravel/prompts[39m ([33mv0.3.21[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mguzzlehttp/uri-template[39m ([33mv1.0.9[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mpsr/http-client[39m ([33m1.0.3[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mralouphie/getallheaders[39m ([33m3.0.3[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mguzzlehttp/psr7[39m ([33m2.12.5[39m): Extracting archive
+ DEBUG [e3afac52] 	
+  - Installing [32mguzzlehttp/promises[39m ([33m2.5.1[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mguzzlehttp/guzzle[39m ([33m7.14.2[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mfruitcake/php-cors[39m ([33mv1.4.0[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mdragonmantank/cron-expression[39m ([33mv3.6.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mdoctrine/inflector[39m ([33m2.1.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mlaravel/framework[39m ([33mv12.64.0[39m): Extracting archive
+  - Installing [32manourvalar/eloquent-serialize[39m ([33m1.3.10[39m): Extracting archive
+  - Installing [32mmasterminds/html5[39m ([33m2.10.1[39m): Extracting archive
+  - Installing [32mthecodingmachine/safe[39m ([33mv3.4.0[39m): Extracting archive
+  - Installing [32msabberworm/php-css-parser[39m ([33mv9.4.0[39m): Extracting archive
+  - Installing [32mdompdf/php-svg-lib[39m ([33m1.0.2[39m): Extracting archive
+  - Installing [32mdompdf/php-font-lib[39m ([33m1.0.2[39m): Extracting archive
+  - Installing [32mdompdf/dompdf[39m ([33mv3.1.5[39m): Extracting archive
+  - Installing [32mbarryvdh/laravel-dompdf[39m ([33mv3.1.2[39m): Extracting archive
+  - Installing [32mspatie/laravel-permission[39m ([33m6.25.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mspatie/laravel-package-tools[39m ([33m1.93.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msymfony/html-sanitizer[39m ([33mv7.4.14[39m): Extracting archive
+  - Installing [32mspatie/invade[39m ([33m2.1.0[39m): Extracting archive
+  - Installing [32mspatie/color[39m ([33m1.8.0[39m): Extracting archive
+  - Installing [32mryangjchandler/blade-capture-directive[39m ([33mv1.1.1[39m): Extracting archive
+  - Installing [32mlivewire/livewire[39m ([33mv3.8.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mkirschbaum-development/eloquent-power-joins[39m ([33m4.3.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mpsr/cache[39m ([33m3.0.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mdoctrine/deprecations[39m ([33m1.1.6[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mdoctrine/dbal[39m ([33m4.4.3[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mblade-ui-kit/blade-icons[39m ([33m1.10.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mblade-ui-kit/blade-heroicons[39m ([33m2.7.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/support[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/widgets[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mopenspout/openspout[39m ([33mv4.32.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mleague/csv[39m ([33m9.28.0[39m): Extracting archive
+  - Installing [32mfilament/actions[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/notifications[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/infolists[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/forms[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mdanharrin/date-format-converter[39m ([33mv0.3.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/tables[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mdanharrin/livewire-rate-limiting[39m ([33mv2.2.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilament/filament[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mbezhansalleh/filament-shield[39m ([33m3.9.10[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mdasprid/enum[39m ([33m1.0.7[39m): Extracting archive
+  - Installing [32mfakerphp/faker[39m ([33mv1.24.1[39m): Extracting archive
+  - Installing [32micetalker/filament-table-repeatable-entry[39m ([33mv1.1.0[39m): Extracting archive
+  - Installing [32mlaravel/pail[39m ([33mv1.2.7[39m): Extracting archive
+  - Installing [32mlaravel/pint[39m ([33mv1.29.3[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msymfony/yaml[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mlaravel/sail[39m ([33mv1.63.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mnikic/php-parser[39m ([33mv5.8.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mpsy/psysh[39m ([33mv0.12.24[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mlaravel/tinker[39m ([33mv2.11.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mmarkbaker/matrix[39m ([33m3.0.1[39m): Extracting archive
+  - Installing [32mmarkbaker/complex[39m ([33m3.0.2[39m): Extracting archive
+  - Installing [32mmaennchen/zipstream-php[39m ([33m3.2.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mcomposer/pcre[39m ([33m3.4.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpoffice/phpspreadsheet[39m ([33m5.9.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mcomposer/semver[39m ([33m3.4.4[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mmaatwebsite/excel[39m ([33m4.x-dev a9a16f1[39m): Extracting archive
+  - Installing [32mhamcrest/hamcrest-php[39m ([33mv2.1.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mmockery/mockery[39m ([33m1.6.12[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mfilp/whoops[39m ([33m2.18.4[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mnunomaduro/collision[39m ([33mv8.9.4[39m): Extracting archive
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	  - Installing [32mphiki/phiki[39m ([33mv2.2.0[39m): Extracting archive
+  - Installing [32mstaabm/side-effects-detector[39m ([33m1.0.5[39m): Extracting archive
+  - Installing [32msebastian/version[39m ([33m5.0.2[39m): Extracting archive
+  - Installing [32msebastian/type[39m ([33m5.1.3[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/recursion-context[39m ([33m6.0.3[39m): Extracting archive
+  - Installing [32msebastian/object-reflector[39m ([33m4.0.1[39m): Extracting archive
+  - Installing [32msebastian/object-enumerator[39m ([33m6.0.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/global-state[39m ([33m7.0.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/exporter[39m ([33m6.3.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/environment[39m ([33m7.2.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/diff[39m ([33m6.0.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/comparator[39m ([33m6.3.3[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/code-unit[39m ([33m3.0.3[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32msebastian/cli-parser[39m ([33m3.0.2[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpunit/php-timer[39m ([33m7.0.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpunit/php-text-template[39m ([33m4.0.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpunit/php-invoker[39m ([33m5.0.1[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mphpunit/php-file-iterator[39m ([33m5.1.1[39m): Extracting archive
+  - Installing [32mtheseer/tokenizer[39m ([33m1.3.1[39m): Extracting archive
+  - Installing [32msebastian/lines-of-code[39m ([33m3.0.1[39m): Extracting archive
+  - Installing [32msebastian/complexity[39m ([33m4.0.1[39m): Extracting archive
+  - Installing [32msebastian/code-unit-reverse-lookup[39m ([33m4.0.1[39m): Extracting archive
+  - Installing [32mphpunit/php-code-coverage[39m ([33m11.0.12[39m): Extracting archive
+  - Installing [32mphar-io/version[39m ([33m3.2.1[39m): Extracting archive
+  - Installing [32mphar-io/manifest[39m ([33m2.0.4[39m): Extracting archive
+  - Installing [32mmyclabs/deep-copy[39m ([33m1.13.4[39m): Extracting archive
+  - Installing [32mphpunit/phpunit[39m ([33m11.5.56[39m): Extracting archive
+  - Installing [32msetasign/fpdf[39m ([33m1.9.0[39m): Extracting archive
+  - Installing [32msetasign/fpdi[39m ([33mv2.6.8[39m): Extracting archive
+  - Installing [32mbacon/bacon-qr-code[39m ([33m2.0.8[39m): Extracting archive
+  - Installing [32msimplesoftwareio/simple-qrcode[39m ([33m4.2.0[39m): Extracting archive
+ DEBUG [e3afac52] 	  - Installing [32mspatie/laravel-activitylog[39m ([33m4.12.3[39m): Extracting archive
+ DEBUG [e3afac52] 	   0/160 [>---------------------------]   0%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	  17/160 [==>-------------------------]  10%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	  41/160 [=======>--------------------]  25%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	  57/160 [=========>------------------]  35%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	  67/160 [===========>----------------]  41%
+ DEBUG [e3afac52] 	[1G[2K
+ DEBUG [e3afac52] 	  86/160 [===============>------------]  53%
+ DEBUG [e3afac52] 	[1G[2K  98/160 [=================>----------]  61%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	 112/160 [===================>--------]  70%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K 128/160 [======================>-----]  80%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	 148/160 [=========================>--]  92%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	 160/160 [============================] 100%
+ DEBUG [e3afac52] 	[1G
+ DEBUG [e3afac52] 	[2K
+ DEBUG [e3afac52] 	[32mGenerating optimized autoload files[39m
+ DEBUG [e3afac52] 	[32m105 packages you are using are looking for funding.[39m
+ DEBUG [e3afac52] 	
+ DEBUG [e3afac52] 	[32mUse the `composer fund` command to find out more![39m
+ DEBUG [e3afac52] 	
+  INFO [e3afac52] Finished in 9.869 seconds with exit status 0 (successful).
+  INFO [25488700] Running /usr/bin/env rm -f /var/www/html/ivory/releases/20260726135230/vendor/composer/platform_check.php as allen@129.212.236.65
+ DEBUG [25488700] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env rm -f /var/www/html/ivory/releases/20260726135230/vendor/composer/platform_check.php
+  INFO [25488700] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [83f199ec] Running /usr/bin/env composer dump-autoload --optimize --no-scripts as allen@129.212.236.65
+ DEBUG [83f199ec] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env composer dump-autoload --optimize --no-scripts
+ DEBUG [83f199ec] 	[32mGenerating optimized autoload files[39m
+ DEBUG [83f199ec] 	[32mGenerated optimized autoload files containing 10077 classes[39m
+  INFO [83f199ec] Finished in 5.310 seconds with exit status 0 (successful).
+  INFO [50e64f44] Running /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135230/bootstrap/cache/ as allen@129.212.236.65
+ DEBUG [50e64f44] Command: /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135230/bootstrap/cache/
+  INFO [50e64f44] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [018b710d] Running /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135230/storage/ as allen@129.212.236.65
+ DEBUG [018b710d] Command: /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135230/storage/
+  INFO [018b710d] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [f337b372] Running if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [f337b372] Command: if test ! -d /var/www/html/ivory/releases/20260726135230; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135230'" 1>&2; false; fi
+ DEBUG [f337b372] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [4a12d56e] Running /usr/bin/env php artisan config:clear as allen@129.212.236.65
+ DEBUG [4a12d56e] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env php artisan config:clear
+ DEBUG [4a12d56e] 	
+  [37;44m INFO [39;49m Configuration cache cleared successfully.  
+
+  INFO [4a12d56e] Finished in 0.806 seconds with exit status 0 (successful).
+  INFO [a4329fde] Running /usr/bin/env php artisan cache:clear as allen@129.212.236.65
+ DEBUG [a4329fde] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env php artisan cache:clear
+ DEBUG [a4329fde] 	
+  [37;44m INFO [39;49m Application cache cleared successfully.  
+
+  INFO [a4329fde] Finished in 0.823 seconds with exit status 0 (successful).
+  INFO [bfcbeea2] Running /usr/bin/env php artisan view:clear as allen@129.212.236.65
+ DEBUG [bfcbeea2] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env php artisan view:clear
+ DEBUG [bfcbeea2] 	
+ DEBUG [bfcbeea2] 	  [37;44m INFO [39;49m Compiled views cleared successfully.  
+
+  INFO [bfcbeea2] Finished in 1.150 seconds with exit status 0 (successful).
+  INFO [097eefbf] Running /usr/bin/env php artisan storage:link as allen@129.212.236.65
+ DEBUG [097eefbf] Command: cd /var/www/html/ivory/releases/20260726135230 && /usr/bin/env php artisan storage:link
+ DEBUG [097eefbf] 	
+  [37;44m INFO [39;49m The [1m[public/storage][22m link has been connected to [1m[storage/app/public][22m.  
+
+  INFO [097eefbf] Finished in 0.825 seconds with exit status 0 (successful).
+  INFO [636b80dc] Running /usr/bin/env ln -s /var/www/html/ivory/releases/20260726135230 /var/www/html/ivory/releases/current as allen@129.212.236.65
+ DEBUG [636b80dc] Command: /usr/bin/env ln -s /var/www/html/ivory/releases/20260726135230 /var/www/html/ivory/releases/current
+  INFO [636b80dc] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [0650da3c] Running /usr/bin/env mv /var/www/html/ivory/releases/current /var/www/html/ivory as allen@129.212.236.65
+ DEBUG [0650da3c] Command: /usr/bin/env mv /var/www/html/ivory/releases/current /var/www/html/ivory
+  INFO [0650da3c] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [fdddf882] Running /usr/bin/env ls -x /var/www/html/ivory/releases as allen@129.212.236.65
+ DEBUG [fdddf882] Command: /usr/bin/env ls -x /var/www/html/ivory/releases
+ DEBUG [fdddf882] 	20260626065118	20260627144357	20260627150940	20260627151217	20260726082803
+20260726135230
+ DEBUG [fdddf882] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 129.212.236.65
+ DEBUG [9c7ff958] Running [ -d /var/www/html/ivory/current ] as allen@129.212.236.65
+ DEBUG [9c7ff958] Command: [ -d /var/www/html/ivory/current ]
+ DEBUG [9c7ff958] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [cdc5b3c6] Running /usr/bin/env readlink /var/www/html/ivory/current as allen@129.212.236.65
+ DEBUG [cdc5b3c6] Command: /usr/bin/env readlink /var/www/html/ivory/current
+ DEBUG [cdc5b3c6] 	/var/www/html/ivory/releases/20260726135230
+ DEBUG [cdc5b3c6] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [2f9ec25f] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260626065118 as allen@129.212.236.65
+ DEBUG [2f9ec25f] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260626065118
+  INFO [2f9ec25f] Finished in 3.396 seconds with exit status 0 (successful).
+ DEBUG [2a2ee140] Running if test ! -d /var/www/html/ivory/releases; then echo "Directory does not exist '/var/www/html/ivory/releases'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [2a2ee140] Command: if test ! -d /var/www/html/ivory/releases; then echo "Directory does not exist '/var/www/html/ivory/releases'" 1>&2; false; fi
+ DEBUG [2a2ee140] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [62382e0d] Running /usr/bin/env echo "Branch main (at 2c1adafff83178c39b9230ad68906ff2c5877775) deployed as release 20260726135230 by allen.nopre" >> /var/www/html/ivory/revisions.log as allen@129.212.236.65
+ DEBUG [62382e0d] Command: cd /var/www/html/ivory/releases && /usr/bin/env echo "Branch main (at 2c1adafff83178c39b9230ad68906ff2c5877775) deployed as release 20260726135230 by allen.nopre" >> /var/www/html/ivory/revisions.log
+  INFO [62382e0d] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2026-07-26 21:53:11 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [80b6a9df] Running /usr/bin/env mkdir -p /tmp as allen@129.212.236.65
+ DEBUG [80b6a9df] Command: /usr/bin/env mkdir -p /tmp
+  INFO [80b6a9df] Finished in 0.742 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-0f99998626e2d26f8035.sh 0.0%
+  INFO Uploading /tmp/git-ssh-0f99998626e2d26f8035.sh 100.0%
+  INFO [8fea4b70] Running /usr/bin/env chmod 700 /tmp/git-ssh-0f99998626e2d26f8035.sh as allen@129.212.236.65
+ DEBUG [8fea4b70] Command: /usr/bin/env chmod 700 /tmp/git-ssh-0f99998626e2d26f8035.sh
+  INFO [8fea4b70] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [d61189b7] Running /usr/bin/env git ls-remote git@github.com:acnopre/hpdai.git HEAD as allen@129.212.236.65
+ DEBUG [d61189b7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git ls-remote git@github.com:acnopre/hpdai.git HEAD )
+ DEBUG [d61189b7] 	2c1adafff83178c39b9230ad68906ff2c5877775	
+ DEBUG [d61189b7] 	HEAD
+  INFO [d61189b7] Finished in 2.952 seconds with exit status 0 (successful).
+  INFO [3f67c643] Running /usr/bin/env mkdir -p /var/www/html/ivory/shared /var/www/html/ivory/releases as allen@129.212.236.65
+ DEBUG [3f67c643] Command: /usr/bin/env mkdir -p /var/www/html/ivory/shared /var/www/html/ivory/releases
+  INFO [3f67c643] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [b4c3bc7e] Running /usr/bin/env mkdir -p /var/www/html/ivory/shared/storage/app /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/shared/storage/uploads as allen@129.212.236.65
+ DEBUG [b4c3bc7e] Command: /usr/bin/env mkdir -p /var/www/html/ivory/shared/storage/app /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/shared/storage/uploads
+  INFO [b4c3bc7e] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [00aa10ea] Running [ -f /var/www/html/ivory/current/REVISION ] as allen@129.212.236.65
+ DEBUG [00aa10ea] Command: [ -f /var/www/html/ivory/current/REVISION ]
+ DEBUG [00aa10ea] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [03726534] Running /usr/bin/env cat /var/www/html/ivory/current/REVISION 2>/dev/null as allen@129.212.236.65
+ DEBUG [03726534] Command: /usr/bin/env cat /var/www/html/ivory/current/REVISION 2>/dev/null
+ DEBUG [03726534] 	2c1adafff83178c39b9230ad68906ff2c5877775
+ DEBUG [03726534] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [a771b763] Running [ -f /var/www/html/ivory/current/REVISION_TIME ] as allen@129.212.236.65
+ DEBUG [a771b763] Command: [ -f /var/www/html/ivory/current/REVISION_TIME ]
+ DEBUG [a771b763] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [36911238] Running /usr/bin/env cat /var/www/html/ivory/current/REVISION_TIME 2>/dev/null as allen@129.212.236.65
+ DEBUG [36911238] Command: /usr/bin/env cat /var/www/html/ivory/current/REVISION_TIME 2>/dev/null
+ DEBUG [36911238] 	1785073202
+ DEBUG [36911238] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [a23a3f0b] Running [ -f /var/www/html/ivory/repo/HEAD ] as allen@129.212.236.65
+ DEBUG [a23a3f0b] Command: [ -f /var/www/html/ivory/repo/HEAD ]
+ DEBUG [a23a3f0b] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/html/ivory/repo
+ DEBUG [1431fc7b] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [1431fc7b] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [1431fc7b] Finished in 0.163 seconds with exit status 0 (successful).
+  INFO [a4c8ba96] Running /usr/bin/env git remote set-url origin git@github.com:acnopre/hpdai.git as allen@129.212.236.65
+ DEBUG [a4c8ba96] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git remote set-url origin git@github.com:acnopre/hpdai.git )
+  INFO [a4c8ba96] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [a39c4c29] Running /usr/bin/env git remote update --prune as allen@129.212.236.65
+ DEBUG [a39c4c29] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git remote update --prune )
+  INFO [a39c4c29] Finished in 2.947 seconds with exit status 0 (successful).
+ DEBUG [5dced9af] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [5dced9af] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [5dced9af] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [d730f251] Running /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135316 as allen@129.212.236.65
+ DEBUG [d730f251] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135316 )
+  INFO [d730f251] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [2f300f1a] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/html/ivory/releases/20260726135316 as allen@129.212.236.65
+ DEBUG [2f300f1a] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/html/ivory/releases/20260726135316 )
+  INFO [2f300f1a] Finished in 0.846 seconds with exit status 0 (successful).
+ DEBUG [a9131f04] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [a9131f04] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [a9131f04] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [e4f8bc40] Running /usr/bin/env git rev-list --max-count=1 main as allen@129.212.236.65
+ DEBUG [e4f8bc40] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [e4f8bc40] 	2c1adafff83178c39b9230ad68906ff2c5877775
+ DEBUG [e4f8bc40] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [62c62518] Running if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [62c62518] Command: if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi
+ DEBUG [62c62518] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [bdd3fbfe] Running /usr/bin/env echo "2c1adafff83178c39b9230ad68906ff2c5877775" > REVISION as allen@129.212.236.65
+ DEBUG [bdd3fbfe] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env echo "2c1adafff83178c39b9230ad68906ff2c5877775" > REVISION
+  INFO [bdd3fbfe] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [cacb9abe] Running if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [cacb9abe] Command: if test ! -d /var/www/html/ivory/repo; then echo "Directory does not exist '/var/www/html/ivory/repo'" 1>&2; false; fi
+ DEBUG [cacb9abe] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [4be60555] Running /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main as allen@129.212.236.65
+ DEBUG [4be60555] Command: cd /var/www/html/ivory/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0f99998626e2d26f8035.sh" ; /usr/bin/env git --no-pager log -1 --pretty=format:"%ct" main )
+ DEBUG [4be60555] 	1785073202
+ DEBUG [4be60555] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [587fb2b1] Running if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [587fb2b1] Command: if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi
+ DEBUG [587fb2b1] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [72763d83] Running /usr/bin/env echo "1785073202" > REVISION_TIME as allen@129.212.236.65
+ DEBUG [72763d83] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env echo "1785073202" > REVISION_TIME
+  INFO [72763d83] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [e1cf4dbf] Running /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135316/storage /var/www/html/ivory/releases/20260726135316/storage/framework as allen@129.212.236.65
+ DEBUG [e1cf4dbf] Command: /usr/bin/env mkdir -p /var/www/html/ivory/releases/20260726135316/storage /var/www/html/ivory/releases/20260726135316/storage/framework
+  INFO [e1cf4dbf] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [d7a2d1fc] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/app ] as allen@129.212.236.65
+ DEBUG [d7a2d1fc] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/app ]
+ DEBUG [d7a2d1fc] Finished in 0.153 seconds with exit status 1 (failed).
+ DEBUG [02882eca] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/app ] as allen@129.212.236.65
+ DEBUG [02882eca] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/app ]
+ DEBUG [02882eca] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [e4babb00] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/app as allen@129.212.236.65
+ DEBUG [e4babb00] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/app
+  INFO [e4babb00] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [134d8701] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/app /var/www/html/ivory/releases/20260726135316/storage/app as allen@129.212.236.65
+ DEBUG [134d8701] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/app /var/www/html/ivory/releases/20260726135316/storage/app
+  INFO [134d8701] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [7618a0c4] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/cache ] as allen@129.212.236.65
+ DEBUG [7618a0c4] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/cache ]
+ DEBUG [7618a0c4] Finished in 0.150 seconds with exit status 1 (failed).
+ DEBUG [84fc07e1] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/cache ] as allen@129.212.236.65
+ DEBUG [84fc07e1] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/cache ]
+ DEBUG [84fc07e1] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [8f0680c8] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/cache as allen@129.212.236.65
+ DEBUG [8f0680c8] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/cache
+  INFO [8f0680c8] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [d8b2f1fe] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/releases/20260726135316/storage/framework/cache as allen@129.212.236.65
+ DEBUG [d8b2f1fe] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/cache /var/www/html/ivory/releases/20260726135316/storage/framework/cache
+  INFO [d8b2f1fe] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [ca6b0a22] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/sessions ] as allen@129.212.236.65
+ DEBUG [ca6b0a22] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/sessions ]
+ DEBUG [ca6b0a22] Finished in 0.161 seconds with exit status 1 (failed).
+ DEBUG [3e1bf545] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/sessions ] as allen@129.212.236.65
+ DEBUG [3e1bf545] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/sessions ]
+ DEBUG [3e1bf545] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [99079b19] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/sessions as allen@129.212.236.65
+ DEBUG [99079b19] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/sessions
+  INFO [99079b19] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [3cb1bfc9] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/releases/20260726135316/storage/framework/sessions as allen@129.212.236.65
+ DEBUG [3cb1bfc9] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/sessions /var/www/html/ivory/releases/20260726135316/storage/framework/sessions
+  INFO [3cb1bfc9] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [ea9f9976] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/views ] as allen@129.212.236.65
+ DEBUG [ea9f9976] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/framework/views ]
+ DEBUG [ea9f9976] Finished in 0.162 seconds with exit status 1 (failed).
+ DEBUG [33e8eb44] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/views ] as allen@129.212.236.65
+ DEBUG [33e8eb44] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/framework/views ]
+ DEBUG [33e8eb44] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [e32200b0] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/views as allen@129.212.236.65
+ DEBUG [e32200b0] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/framework/views
+  INFO [e32200b0] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [18db0c89] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/releases/20260726135316/storage/framework/views as allen@129.212.236.65
+ DEBUG [18db0c89] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/framework/views /var/www/html/ivory/releases/20260726135316/storage/framework/views
+  INFO [18db0c89] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [36ccab27] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/logs ] as allen@129.212.236.65
+ DEBUG [36ccab27] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/logs ]
+ DEBUG [36ccab27] Finished in 0.159 seconds with exit status 1 (failed).
+ DEBUG [7430e8bd] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/logs ] as allen@129.212.236.65
+ DEBUG [7430e8bd] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/logs ]
+ DEBUG [7430e8bd] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [eedc5bf6] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/logs as allen@129.212.236.65
+ DEBUG [eedc5bf6] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/storage/logs
+  INFO [eedc5bf6] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [7439eea5] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/releases/20260726135316/storage/logs as allen@129.212.236.65
+ DEBUG [7439eea5] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/logs /var/www/html/ivory/releases/20260726135316/storage/logs
+  INFO [7439eea5] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [a04ce9ef] Running [ -L /var/www/html/ivory/releases/20260726135316/storage/uploads ] as allen@129.212.236.65
+ DEBUG [a04ce9ef] Command: [ -L /var/www/html/ivory/releases/20260726135316/storage/uploads ]
+ DEBUG [a04ce9ef] Finished in 0.152 seconds with exit status 1 (failed).
+ DEBUG [ee8b9e2a] Running [ -d /var/www/html/ivory/releases/20260726135316/storage/uploads ] as allen@129.212.236.65
+ DEBUG [ee8b9e2a] Command: [ -d /var/www/html/ivory/releases/20260726135316/storage/uploads ]
+ DEBUG [ee8b9e2a] Finished in 0.159 seconds with exit status 1 (failed).
+  INFO [fa605066] Running /usr/bin/env ln -s /var/www/html/ivory/shared/storage/uploads /var/www/html/ivory/releases/20260726135316/storage/uploads as allen@129.212.236.65
+ DEBUG [fa605066] Command: /usr/bin/env ln -s /var/www/html/ivory/shared/storage/uploads /var/www/html/ivory/releases/20260726135316/storage/uploads
+  INFO [fa605066] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [76057884] Running /usr/bin/env cp /var/www/html/secret/.env /var/www/html/ivory/releases/20260726135316/.env as allen@129.212.236.65
+ DEBUG [76057884] Command: /usr/bin/env cp /var/www/html/secret/.env /var/www/html/ivory/releases/20260726135316/.env
+  INFO [76057884] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [eebd7b42] Running if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [eebd7b42] Command: if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi
+ DEBUG [eebd7b42] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [46352a36] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/vendor as allen@129.212.236.65
+ DEBUG [46352a36] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env rm -rf /var/www/html/ivory/releases/20260726135316/vendor
+  INFO [46352a36] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [783b3c20] Running /usr/bin/env composer install --prefer-dist --optimize-autoloader --ignore-platform-req=php --no-scripts as allen@129.212.236.65
+ DEBUG [783b3c20] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env composer install --prefer-dist --optimize-autoloader --ignore-platform-req=php --no-scripts
+ DEBUG [783b3c20] 	[32mInstalling dependencies from lock file (including require-dev)[39m
+ DEBUG [783b3c20] 	[32mVerifying lock file contents can be installed on current platform.[39m
+ DEBUG [783b3c20] 	[32mPackage operations: 160 installs, 0 updates, 0 removals[39m
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	    0 [>---------------------------][1G[2K    0 [->--------------------------][1G[2K    0 [--->------------------------][1G[2K
+ DEBUG [783b3c20] 	  - Installing [32mvoku/portable-ascii[39m ([33m2.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-php80[39m ([33mv1.37.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-mbstring[39m ([33mv1.38.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-ctype[39m ([33mv1.37.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mphpoption/phpoption[39m ([33m1.9.5[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mgraham-campbell/result-type[39m ([33mv1.1.4[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mvlucas/phpdotenv[39m ([33mv5.6.4[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/css-selector[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mtijsverkoyen/css-to-inline-styles[39m ([33mv2.4.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/deprecation-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/var-dumper[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32msymfony/polyfill-uuid[39m ([33mv1.37.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/uid[39m ([33mv7.4.9[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/routing[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/process[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-php85[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-php84[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-php83[39m ([33mv1.38.2[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-intl-normalizer[39m ([33mv1.38.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-intl-idn[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/mime[39m ([33mv7.4.13[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/container[39m ([33m2.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/service-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/event-dispatcher[39m ([33m1.0.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/event-dispatcher-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/event-dispatcher[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/log[39m ([33m3.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mdoctrine/lexer[39m ([33m3.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32megulias/email-validator[39m ([33m4.0.4[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/mailer[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/http-foundation[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/error-handler[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/http-kernel[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/finder[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/polyfill-intl-grapheme[39m ([33mv1.38.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/string[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/console[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mramsey/collection[39m ([33m2.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mbrick/math[39m ([33m0.14.8[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mramsey/uuid[39m ([33m4.9.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/simple-cache[39m ([33m3.0.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mnunomaduro/termwind[39m ([33mv2.4.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/translation-contracts[39m ([33mv3.7.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/translation[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/clock[39m ([33m1.0.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msymfony/clock[39m ([33mv8.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32mcarbonphp/carbon-doctrine-types[39m ([33m3.2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32mnesbot/carbon[39m ([33m3.13.1[39m): Extracting archive
+  - Installing [32mmonolog/monolog[39m ([33m3.10.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mpsr/http-message[39m ([33m2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/http-factory[39m ([33m1.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/uri-interfaces[39m ([33m7.8.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/uri[39m ([33m7.8.1[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/mime-type-detection[39m ([33m1.17.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/flysystem-local[39m ([33m3.31.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32mleague/flysystem[39m ([33m3.35.2[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mnette/utils[39m ([33mv4.1.4[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mnette/schema[39m ([33mv1.3.5[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mdflydev/dot-access-data[39m ([33mv3.0.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/config[39m ([33mv1.2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mleague/commonmark[39m ([33m2.8.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32mlaravel/serializable-closure[39m ([33mv2.0.13[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/prompts[39m ([33mv0.3.21[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mguzzlehttp/uri-template[39m ([33mv1.0.9[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mpsr/http-client[39m ([33m1.0.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mralouphie/getallheaders[39m ([33m3.0.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mguzzlehttp/psr7[39m ([33m2.12.5[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mguzzlehttp/promises[39m ([33m2.5.1[39m): Extracting archive
+  - Installing [32mguzzlehttp/guzzle[39m ([33m7.14.2[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32mfruitcake/php-cors[39m ([33mv1.4.0[39m): Extracting archive
+  - Installing [32mdragonmantank/cron-expression[39m ([33mv3.6.0[39m): Extracting archive
+  - Installing [32mdoctrine/inflector[39m ([33m2.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/framework[39m ([33mv12.64.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32manourvalar/eloquent-serialize[39m ([33m1.3.10[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmasterminds/html5[39m ([33m2.10.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mthecodingmachine/safe[39m ([33mv3.4.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msabberworm/php-css-parser[39m ([33mv9.4.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdompdf/php-svg-lib[39m ([33m1.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdompdf/php-font-lib[39m ([33m1.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdompdf/dompdf[39m ([33mv3.1.5[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mbarryvdh/laravel-dompdf[39m ([33mv3.1.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mspatie/laravel-permission[39m ([33m6.25.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mspatie/laravel-package-tools[39m ([33m1.93.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/html-sanitizer[39m ([33mv7.4.14[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mspatie/invade[39m ([33m2.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mspatie/color[39m ([33m1.8.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mryangjchandler/blade-capture-directive[39m ([33mv1.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlivewire/livewire[39m ([33mv3.8.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mkirschbaum-development/eloquent-power-joins[39m ([33m4.3.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mpsr/cache[39m ([33m3.0.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdoctrine/deprecations[39m ([33m1.1.6[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdoctrine/dbal[39m ([33m4.4.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mblade-ui-kit/blade-icons[39m ([33m1.10.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mblade-ui-kit/blade-heroicons[39m ([33m2.7.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/support[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/widgets[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mopenspout/openspout[39m ([33mv4.32.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mleague/csv[39m ([33m9.28.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/actions[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/notifications[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/infolists[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/forms[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdanharrin/date-format-converter[39m ([33mv0.3.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/tables[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdanharrin/livewire-rate-limiting[39m ([33mv2.2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfilament/filament[39m ([33mv3.3.54[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mbezhansalleh/filament-shield[39m ([33m3.9.10[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mdasprid/enum[39m ([33m1.0.7[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mfakerphp/faker[39m ([33mv1.24.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32micetalker/filament-table-repeatable-entry[39m ([33mv1.1.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/pail[39m ([33mv1.2.7[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/pint[39m ([33mv1.29.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msymfony/yaml[39m ([33mv8.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/sail[39m ([33mv1.63.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mnikic/php-parser[39m ([33mv5.8.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mpsy/psysh[39m ([33mv0.12.24[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mlaravel/tinker[39m ([33mv2.11.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmarkbaker/matrix[39m ([33m3.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmarkbaker/complex[39m ([33m3.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmaennchen/zipstream-php[39m ([33m3.2.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mcomposer/pcre[39m ([33m3.4.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpoffice/phpspreadsheet[39m ([33m5.9.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mcomposer/semver[39m ([33m3.4.4[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmaatwebsite/excel[39m ([33m4.x-dev a9a16f1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mhamcrest/hamcrest-php[39m ([33mv2.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmockery/mockery[39m ([33m1.6.12[39m): Extracting archive
+ DEBUG [783b3c20] 	
+  - Installing [32mfilp/whoops[39m ([33m2.18.4[39m): Extracting archive
+  - Installing [32mnunomaduro/collision[39m ([33mv8.9.4[39m): Extracting archive
+  - Installing [32mphiki/phiki[39m ([33mv2.2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mstaabm/side-effects-detector[39m ([33m1.0.5[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/version[39m ([33m5.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/type[39m ([33m5.1.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/recursion-context[39m ([33m6.0.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/object-reflector[39m ([33m4.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/object-enumerator[39m ([33m6.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/global-state[39m ([33m7.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/exporter[39m ([33m6.3.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/environment[39m ([33m7.2.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/diff[39m ([33m6.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/comparator[39m ([33m6.3.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/code-unit[39m ([33m3.0.3[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/cli-parser[39m ([33m3.0.2[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/php-timer[39m ([33m7.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/php-text-template[39m ([33m4.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/php-invoker[39m ([33m5.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/php-file-iterator[39m ([33m5.1.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mtheseer/tokenizer[39m ([33m1.3.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/lines-of-code[39m ([33m3.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/complexity[39m ([33m4.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msebastian/code-unit-reverse-lookup[39m ([33m4.0.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/php-code-coverage[39m ([33m11.0.12[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphar-io/version[39m ([33m3.2.1[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphar-io/manifest[39m ([33m2.0.4[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mmyclabs/deep-copy[39m ([33m1.13.4[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mphpunit/phpunit[39m ([33m11.5.56[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msetasign/fpdf[39m ([33m1.9.0[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	  - Installing [32msetasign/fpdi[39m ([33mv2.6.8[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mbacon/bacon-qr-code[39m ([33m2.0.8[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32msimplesoftwareio/simple-qrcode[39m ([33m4.2.0[39m): Extracting archive
+ DEBUG [783b3c20] 	  - Installing [32mspatie/laravel-activitylog[39m ([33m4.12.3[39m): Extracting archive
+ DEBUG [783b3c20] 	
+ DEBUG [783b3c20] 	   0/160 [>---------------------------]   0%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K
+ DEBUG [783b3c20] 	  20/160 [===>------------------------]  12%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K
+ DEBUG [783b3c20] 	  37/160 [======>---------------------]  23%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K  50/160 [========>-------------------]  31%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K
+ DEBUG [783b3c20] 	  70/160 [============>---------------]  43%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K  85/160 [==============>-------------]  53%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K  98/160 [=================>----------]  61%
+ DEBUG [783b3c20] 	[1G
+ DEBUG [783b3c20] 	[2K
+ DEBUG [783b3c20] 	 112/160 [===================>--------]  70%
+ DEBUG [783b3c20] 	[1G[2K
+ DEBUG [783b3c20] 	 132/160 [=======================>----]  82%
+ DEBUG [783b3c20] 	[1G[2K 147/160 [=========================>--]  91%
+ DEBUG [783b3c20] 	[1G[2K 160/160 [============================] 100%[1G[2K
+ DEBUG [783b3c20] 	[32mGenerating optimized autoload files[39m
+ DEBUG [783b3c20] 	[32m105 packages you are using are looking for funding.[39m
+ DEBUG [783b3c20] 	[32mUse the `composer fund` command to find out more![39m
+  INFO [783b3c20] Finished in 9.666 seconds with exit status 0 (successful).
+  INFO [03829eae] Running /usr/bin/env rm -f /var/www/html/ivory/releases/20260726135316/vendor/composer/platform_check.php as allen@129.212.236.65
+ DEBUG [03829eae] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env rm -f /var/www/html/ivory/releases/20260726135316/vendor/composer/platform_check.php
+  INFO [03829eae] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [a580d229] Running /usr/bin/env composer dump-autoload --optimize --no-scripts as allen@129.212.236.65
+ DEBUG [a580d229] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env composer dump-autoload --optimize --no-scripts
+ DEBUG [a580d229] 	[32mGenerating optimized autoload files[39m
+ DEBUG [a580d229] 	[32mGenerated optimized autoload files containing 10077 classes[39m
+  INFO [a580d229] Finished in 5.494 seconds with exit status 0 (successful).
+  INFO [3e633ca5] Running /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135316/bootstrap/cache/ as allen@129.212.236.65
+ DEBUG [3e633ca5] Command: /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135316/bootstrap/cache/
+  INFO [3e633ca5] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [1eb815aa] Running /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135316/storage/ as allen@129.212.236.65
+ DEBUG [1eb815aa] Command: /usr/bin/env chmod -R 775 /var/www/html/ivory/releases/20260726135316/storage/
+  INFO [1eb815aa] Finished in 0.173 seconds with exit status 0 (successful).
+ DEBUG [9e565d1f] Running if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [9e565d1f] Command: if test ! -d /var/www/html/ivory/releases/20260726135316; then echo "Directory does not exist '/var/www/html/ivory/releases/20260726135316'" 1>&2; false; fi
+ DEBUG [9e565d1f] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [2a4cdcb0] Running /usr/bin/env php artisan config:clear as allen@129.212.236.65
+ DEBUG [2a4cdcb0] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env php artisan config:clear
+ DEBUG [2a4cdcb0] 	
+  [37;44m INFO [39;49m Configuration cache cleared successfully.  
+
+  INFO [2a4cdcb0] Finished in 0.892 seconds with exit status 0 (successful).
+  INFO [c50fccea] Running /usr/bin/env php artisan cache:clear as allen@129.212.236.65
+ DEBUG [c50fccea] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env php artisan cache:clear
+ DEBUG [c50fccea] 	
+  [37;44m INFO [39;49m Application cache cleared successfully.  
+
+  INFO [c50fccea] Finished in 0.803 seconds with exit status 0 (successful).
+  INFO [4e1e0f38] Running /usr/bin/env php artisan view:clear as allen@129.212.236.65
+ DEBUG [4e1e0f38] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env php artisan view:clear
+ DEBUG [4e1e0f38] 	
+  [37;44m INFO [39;49m Compiled views cleared successfully.  
+
+  INFO [4e1e0f38] Finished in 1.064 seconds with exit status 0 (successful).
+  INFO [fd952419] Running /usr/bin/env php artisan storage:link as allen@129.212.236.65
+ DEBUG [fd952419] Command: cd /var/www/html/ivory/releases/20260726135316 && /usr/bin/env php artisan storage:link
+ DEBUG [fd952419] 	
+  [37;44m INFO [39;49m The [1m[public/storage][22m link has been connected to [1m[storage/app/public][22m.  
+
+  INFO [fd952419] Finished in 0.892 seconds with exit status 0 (successful).
+  INFO [10ea20bc] Running /usr/bin/env ln -s /var/www/html/ivory/releases/20260726135316 /var/www/html/ivory/releases/current as allen@129.212.236.65
+ DEBUG [10ea20bc] Command: /usr/bin/env ln -s /var/www/html/ivory/releases/20260726135316 /var/www/html/ivory/releases/current
+  INFO [10ea20bc] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [5cd781b2] Running /usr/bin/env mv /var/www/html/ivory/releases/current /var/www/html/ivory as allen@129.212.236.65
+ DEBUG [5cd781b2] Command: /usr/bin/env mv /var/www/html/ivory/releases/current /var/www/html/ivory
+  INFO [5cd781b2] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [f84d5c89] Running /usr/bin/env ls -x /var/www/html/ivory/releases as allen@129.212.236.65
+ DEBUG [f84d5c89] Command: /usr/bin/env ls -x /var/www/html/ivory/releases
+ DEBUG [f84d5c89] 	20260627144357	20260627150940	20260627151217	20260726082803	20260726135230
+20260726135316
+ DEBUG [f84d5c89] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 129.212.236.65
+ DEBUG [8d94d0e5] Running [ -d /var/www/html/ivory/current ] as allen@129.212.236.65
+ DEBUG [8d94d0e5] Command: [ -d /var/www/html/ivory/current ]
+ DEBUG [8d94d0e5] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [8d4545f8] Running /usr/bin/env readlink /var/www/html/ivory/current as allen@129.212.236.65
+ DEBUG [8d4545f8] Command: /usr/bin/env readlink /var/www/html/ivory/current
+ DEBUG [8d4545f8] 	/var/www/html/ivory/releases/20260726135316
+ DEBUG [8d4545f8] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [d05be674] Running /usr/bin/env rm -rf /var/www/html/ivory/releases/20260627144357 as allen@129.212.236.65
+ DEBUG [d05be674] Command: /usr/bin/env rm -rf /var/www/html/ivory/releases/20260627144357
+  INFO [d05be674] Finished in 2.499 seconds with exit status 0 (successful).
+ DEBUG [9c079a25] Running if test ! -d /var/www/html/ivory/releases; then echo "Directory does not exist '/var/www/html/ivory/releases'" 1>&2; false; fi as allen@129.212.236.65
+ DEBUG [9c079a25] Command: if test ! -d /var/www/html/ivory/releases; then echo "Directory does not exist '/var/www/html/ivory/releases'" 1>&2; false; fi
+ DEBUG [9c079a25] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [97858f3b] Running /usr/bin/env echo "Branch main (at 2c1adafff83178c39b9230ad68906ff2c5877775) deployed as release 20260726135316 by allen.nopre" >> /var/www/html/ivory/revisions.log as allen@129.212.236.65
+ DEBUG [97858f3b] Command: cd /var/www/html/ivory/releases && /usr/bin/env echo "Branch main (at 2c1adafff83178c39b9230ad68906ff2c5877775) deployed as release 20260726135316 by allen.nopre" >> /var/www/html/ivory/revisions.log
+  INFO [97858f3b] Finished in 0.160 seconds with exit status 0 (successful).
