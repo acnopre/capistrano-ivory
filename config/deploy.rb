@@ -49,6 +49,7 @@ namespace :laravel do
                 execute :php, "artisan cache:clear"
                 execute :php, "artisan view:clear"
                 execute :php, "artisan storage:link"
+                execute :php, "artisan migrate --force"
             end
         end
     end
