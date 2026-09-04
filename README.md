@@ -31,12 +31,18 @@ which ruby && ruby -v
 
 ### 4. Install required gems
 ```sh
-gem install capistrano ed25519 bcrypt_pbkdf
+gem install capistrano ed25519 bcrypt_pbkdf dotenv
 ```
 
 ### 5. Add your SSH key to the server
 ```sh
 ssh-copy-id -i ~/.ssh/id_ed25519.pub <server-user>@<server-ip>
+```
+
+### 6. Configure your .env file
+Copy and fill in your environment values:
+```sh
+cp .env.example .env
 ```
 
 ## Deploy

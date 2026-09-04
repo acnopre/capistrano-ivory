@@ -40,6 +40,7 @@ namespace :laravel do
         on roles(:laravel) do
             execute :chmod, "-R 775 #{release_path}/bootstrap/cache/"
             execute :chmod, "-R 775 #{release_path}/storage/"
+            execute :sudo, "chmod -R 775 #{shared_path}/storage/logs/"
         end
     end
     task :artisan do
@@ -61,15 +62,50 @@ namespace :laravel do
     end
 
     task :configure_dot_env do
-    dotenv_file = fetch(:laravel_dotenv_file)
-        on roles (:laravel) do
-        execute :cp, "#{dotenv_file} #{release_path}/.env"
+        dotenv_file = fetch(:laravel_dotenv_file)
+        on roles(:laravel) do
+            execute :cp, "#{dotenv_file} #{release_path}/.env"
+        end
+    end
+
+    task :sync_version do
+        git_tag  = `git describe --tags --abbrev=0 2>/dev/null`.strip
+        git_hash = `git rev-parse --short HEAD 2>/dev/null`.strip
+        prev_tag = `git describe --tags --abbrev=0 #{git_tag}^ 2>/dev/null`.strip
+        range    = prev_tag.empty? ? git_tag : "#{prev_tag}..#{git_tag}"
+        raw_log  = `git log #{range} --pretty=format:'%s' 2>/dev/null`.strip
+
+        changes = []
+        raw_log.each_line do |line|
+            line = line.strip.gsub(/^'|'$/, '')
+            next if line.empty?
+            if line.start_with?('feat:')
+                changes << { type: 'Feature', description: line.sub(/^feat:\s*/, '') }
+            elsif line.start_with?('fix:')
+                changes << { type: 'Bug Fix', description: line.sub(/^fix:\s*/, '') }
+            elsif line.match?(/^(refactor|perf|chore):/)
+                changes << { type: 'Improvement', description: line.sub(/^[^:]+:\s*/, '') }
+            end
+        end
+
+        require 'json'
+        require 'base64'
+        changes_json = changes.to_json
+        changes_b64  = Base64.strict_encode64(changes_json)
+
+        on roles(:laravel) do
+            within release_path do
+                execute :php, "artisan version:sync --app-version=#{git_tag} --git-hash=#{git_hash} --changes-b64=#{changes_b64}"
+            end
         end
     end
 end
+
+
 namespace :deploy do
     after :updated, "laravel:configure_dot_env"
     after :updated, "composer:install"
     after :updated, "laravel:fix_permission"
     after :updated, "laravel:artisan"
+    after "laravel:artisan", "laravel:sync_version"
 end
