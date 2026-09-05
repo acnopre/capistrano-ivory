@@ -7,8 +7,6 @@ set :pty, true
 # Default branch is :master
 set :branch, ENV["branch"] || "main"
 # Default deploy_to directory is /var/www/laravel-capistrano
-set :deploy_to, '/var/www/html/ivory'
-set :laravel_dotenv_file, '/var/www/html/secret/.env'
 # Linked directories for a standard Laravel 5 application
 set :laravel_5_linked_dirs, [
   'storage'
@@ -69,7 +67,7 @@ namespace :laravel do
     end
 
     task :sync_version do
-        repo_path = File.expand_path('~/ivorry')
+        repo_path = File.expand_path(ENV['STAGING_REPO_PATH'] || ENV['PRODUCTION_REPO_PATH'])
         git_tag   = `git -C #{repo_path} describe --tags --exact-match HEAD 2>/dev/null`.strip
 
         if git_tag.empty?
