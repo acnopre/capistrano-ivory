@@ -89,18 +89,20 @@ namespace :laravel do
                 date    = `git -C #{tmp_dir} log -1 --format=%cI #{tag} 2>/dev/null`.strip
                 prev    = all_tags[i - 1] if i > 0
                 range   = prev ? "#{prev}..#{tag}" : tag
-                raw_log = `git -C #{tmp_dir} log #{range} --pretty=format:'%s' 2>/dev/null`.strip
+                raw_log = `git -C #{tmp_dir} log #{range} --pretty=format:'%h|%cI|%s' 2>/dev/null`.strip
 
                 changes = []
                 raw_log.each_line do |line|
                     line = line.strip.gsub(/^'|'$/, '')
                     next if line.empty?
-                    if line.start_with?('feat:')
-                        changes << { type: 'Feature', description: line.sub(/^feat:\s*/, '') }
-                    elsif line.start_with?('fix:')
-                        changes << { type: 'Bug Fix', description: line.sub(/^fix:\s*/, '') }
-                    elsif line.match?(/^(refactor|perf|chore):/)
-                        changes << { type: 'Improvement', description: line.sub(/^[^:]+:\s*/, '') }
+                    commit_hash, commit_date, subject = line.split('|', 3)
+                    next if subject.nil?
+                    if subject.start_with?('feat:')
+                        changes << { type: 'Feature', description: subject.sub(/^feat:\s*/, ''), hash: commit_hash, date: commit_date }
+                    elsif subject.start_with?('fix:')
+                        changes << { type: 'Bug Fix', description: subject.sub(/^fix:\s*/, ''), hash: commit_hash, date: commit_date }
+                    elsif subject.match?(/^(refactor|perf|chore):/)
+                        changes << { type: 'Improvement', description: subject.sub(/^[^:]+:\s*/, ''), hash: commit_hash, date: commit_date }
                     end
                 end
 
