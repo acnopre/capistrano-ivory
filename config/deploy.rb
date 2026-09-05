@@ -70,10 +70,12 @@ namespace :laravel do
 
     task :sync_version do
         git_tag  = `git describe --tags --abbrev=0 2>/dev/null`.strip
-        git_hash = `git rev-parse --short HEAD 2>/dev/null`.strip
+        git_hash = `git rev-parse --short #{git_tag} 2>/dev/null`.strip
         prev_tag = `git describe --tags --abbrev=0 #{git_tag}^ 2>/dev/null`.strip
         range    = prev_tag.empty? ? git_tag : "#{prev_tag}..#{git_tag}"
-        raw_log  = `git log #{range} --pretty=format:'%s' 2>/dev/null`.strip
+        raw_log  = prev_tag.empty? \
+            ? `git log #{git_tag} --pretty=format:'%s' 2>/dev/null`.strip
+            : `git log #{prev_tag}..#{git_tag} --pretty=format:'%s' 2>/dev/null`.strip
 
         changes = []
         raw_log.each_line do |line|
