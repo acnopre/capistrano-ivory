@@ -67,8 +67,7 @@ namespace :laravel do
     end
 
     task :sync_version do
-        repo_path = File.expand_path('~/ivorry')
-        all_tags  = `git -C #{repo_path} tag --sort=version:refname`.strip.split("\n").map(&:strip).reject(&:empty?)
+        all_tags = `git -C #{repo_path} tag --sort=version:refname`.strip.split("\n").map(&:strip).reject(&:empty?)
 
         if all_tags.empty?
             puts "No tags found — skipping version sync."
