@@ -45,8 +45,14 @@ namespace :laravel do
         on roles(:laravel) do
             within release_path do
                 execute :php, "artisan config:clear"
-                execute :php, "artisan cache:clear"
+                execute :php, "artisan config:cache"
+                execute :php, "artisan route:clear"
+                execute :php, "artisan route:cache"
                 execute :php, "artisan view:clear"
+                execute :php, "artisan view:cache"
+                execute :php, "artisan event:clear"
+                execute :php, "artisan event:cache"
+                execute :php, "artisan cache:clear"
                 execute :php, "artisan storage:link"
                 execute :php, "artisan migrate --force"
             end
