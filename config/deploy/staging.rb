@@ -2,7 +2,7 @@
 require 'dotenv'
 Dotenv.load(File.expand_path('../../.env', __dir__))
 
-server ENV['STAGING_SERVER'], user: ENV['STAGING_USER'], port: ENV['STAGING_PORT'].to_i, roles: %w{web app laravel composer}
+server ENV['STAGING_SERVER'], user: ENV['STAGING_USER'], port: (ENV['STAGING_PORT'].to_i.nonzero? || 22), roles: %w{web app laravel composer}
 set :deploy_to, ENV['STAGING_DEPLOY_TO']
 set :laravel_dotenv_file, ENV['STAGING_DOTENV']
 set :ssh_options, {

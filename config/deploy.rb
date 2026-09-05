@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.20.0"
+lock "~> 3.17.2"
 
-set :application, "ivory"
+set :application, "ivorry"
 set :repo_url, "git@github.com:acnopre/hpdai.git"
 set :pty, true
 # Default branch is :master
