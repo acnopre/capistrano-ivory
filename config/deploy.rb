@@ -69,17 +69,18 @@ namespace :laravel do
     end
 
     task :sync_version do
-        git_tag = `git describe --tags --exact-match HEAD 2>/dev/null`.strip
+        repo_path = File.expand_path('~/ivorry')
+        git_tag   = `git -C #{repo_path} describe --tags --exact-match HEAD 2>/dev/null`.strip
 
         if git_tag.empty?
             puts "No exact tag on HEAD — skipping version sync."
             next
         end
 
-        git_hash = `git rev-parse --short HEAD 2>/dev/null`.strip
-        prev_tag = `git describe --tags --abbrev=0 HEAD^ 2>/dev/null`.strip
+        git_hash = `git -C #{repo_path} rev-parse --short HEAD 2>/dev/null`.strip
+        prev_tag = `git -C #{repo_path} describe --tags --abbrev=0 HEAD^ 2>/dev/null`.strip
         range    = prev_tag.empty? ? git_tag : "#{prev_tag}..#{git_tag}"
-        raw_log  = `git log #{range} --pretty=format:'%s' 2>/dev/null`.strip
+        raw_log  = `git -C #{repo_path} log #{range} --pretty=format:'%s' 2>/dev/null`.strip
 
         changes = []
         raw_log.each_line do |line|
