@@ -49,7 +49,6 @@ namespace :laravel do
                 execute :php, "artisan route:clear"
                 execute :php, "artisan route:cache"
                 execute :php, "artisan view:clear"
-                execute :php, "artisan view:cache"
                 execute :php, "artisan event:clear"
                 execute :php, "artisan event:cache"
                 execute :php, "artisan cache:clear"
