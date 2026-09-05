@@ -40,7 +40,7 @@ namespace :laravel do
         on roles(:laravel) do
             execute :chmod, "-R 775 #{release_path}/bootstrap/cache/"
             execute :chmod, "-R 775 #{release_path}/storage/"
-            execute :sudo, "chmod -R 775 #{shared_path}/storage/logs/"
+            # execute :sudo, "chmod -R 775 #{shared_path}/storage/logs/"
         end
     end
     task :artisan do
