@@ -67,38 +67,37 @@ namespace :laravel do
     end
 
     task :sync_version do
-        repo_path = File.expand_path(ENV['STAGING_REPO_PATH'] || ENV['PRODUCTION_REPO_PATH'])
-        git_tag   = `git -C #{repo_path} describe --tags --exact-match HEAD 2>/dev/null`.strip
-
-        if git_tag.empty?
-            puts "No exact tag on HEAD — skipping version sync."
-            next
-        end
-
-        git_hash = `git -C #{repo_path} rev-parse --short HEAD 2>/dev/null`.strip
-        prev_tag = `git -C #{repo_path} describe --tags --abbrev=0 HEAD^ 2>/dev/null`.strip
-        range    = prev_tag.empty? ? git_tag : "#{prev_tag}..#{git_tag}"
-        raw_log  = `git -C #{repo_path} log #{range} --pretty=format:'%s' 2>/dev/null`.strip
-
-        changes = []
-        raw_log.each_line do |line|
-            line = line.strip.gsub(/^'|'$/, '')
-            next if line.empty?
-            if line.start_with?('feat:')
-                changes << { type: 'Feature', description: line.sub(/^feat:\s*/, '') }
-            elsif line.start_with?('fix:')
-                changes << { type: 'Bug Fix', description: line.sub(/^fix:\s*/, '') }
-            elsif line.match?(/^(refactor|perf|chore):/)
-                changes << { type: 'Improvement', description: line.sub(/^[^:]+:\s*/, '') }
-            end
-        end
-
-        require 'json'
-        require 'base64'
-        changes_b64 = Base64.strict_encode64(changes.to_json)
-
         on roles(:laravel) do
             within release_path do
+                git_tag  = capture(:git, "describe --tags --exact-match HEAD 2>/dev/null").strip rescue ''
+
+                if git_tag.empty?
+                    puts "No exact tag on HEAD — skipping version sync."
+                    next
+                end
+
+                git_hash = capture(:git, "rev-parse --short HEAD 2>/dev/null").strip
+                prev_tag = capture(:git, "describe --tags --abbrev=0 HEAD^ 2>/dev/null").strip rescue ''
+                range    = prev_tag.empty? ? git_tag : "#{prev_tag}..#{git_tag}"
+                raw_log  = capture(:git, "log #{range} --pretty=format:'%s' 2>/dev/null").strip
+
+                changes = []
+                raw_log.each_line do |line|
+                    line = line.strip.gsub(/^'|'$/, '')
+                    next if line.empty?
+                    if line.start_with?('feat:')
+                        changes << { type: 'Feature', description: line.sub(/^feat:\s*/, '') }
+                    elsif line.start_with?('fix:')
+                        changes << { type: 'Bug Fix', description: line.sub(/^fix:\s*/, '') }
+                    elsif line.match?(/^(refactor|perf|chore):/)
+                        changes << { type: 'Improvement', description: line.sub(/^[^:]+:\s*/, '') }
+                    end
+                end
+
+                require 'json'
+                require 'base64'
+                changes_b64 = Base64.strict_encode64(changes.to_json)
+
                 execute :php, "artisan version:sync --app-version=#{git_tag} --git-hash=#{git_hash} --changes-b64=#{changes_b64}"
             end
         end
