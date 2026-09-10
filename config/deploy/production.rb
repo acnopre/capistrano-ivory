@@ -15,7 +15,7 @@ set :ssh_options, {
 namespace :deploy do
     after :finished, :restart_php_fpm do
         on roles(:app) do
-            execute :sudo, "systemctl restart php8.5-fpm.service"
+            execute :systemctl, "restart php8.5-fpm.service"
         end
     end
 end
