@@ -12,10 +12,10 @@ set :ssh_options, {
     encryption: %w(aes128-ctr aes192-ctr aes256-ctr)
   }
 
-namespace :deploy do
-    after :finished, :restart_php_fpm do
-        on roles(:app) do
-            execute :systemctl, "restart php8.5-fpm.service"
-        end
-    end
-end
+# namespace :deploy do
+#     after :finished, :restart_php_fpm do
+#         on roles(:app) do
+#             execute :systemctl, "restart php8.5-fpm.service"
+#         end
+#     end
+# end
